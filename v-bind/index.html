@@ -12,9 +12,10 @@
 </head>
 <body>
     <div id="app">
-        {{ message }} <!--  voici la syntaxe d'un template -->
+        <span v-bind:title="message">
+            restez en hover
+        </span>
     </div>
-
     <script src="js/index.js"></script>
 </body>
 </html>
