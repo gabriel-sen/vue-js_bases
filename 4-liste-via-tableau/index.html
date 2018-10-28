@@ -8,17 +8,17 @@
     <!-- production version, optimized for size and speed -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-    <title>2/directives</title>
+    <title>4/liste vida tableau</title>
 </head>
 <body>
     <div id="app">
-        <span v-bind:title="message">
-            restez en hover
-        </span>
+        <ol>
+            <li v-for="todo in todos"> {{ todo.text }} </li>
+        </ol>
     </div>
 
     <a href="../index.html"> retour </a>
-
+    
     <script src="js/index.js"></script>
 </body>
 </html>
